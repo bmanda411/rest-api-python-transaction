@@ -1,7 +1,7 @@
 
    import json
 print('loading function')
-def lambda_handler(event) :
+def lambda_handler(event,context) :
     #1. parse out query string params
     transactionId = event['querystringparameters']['transactionId']
     transactiontype = event['querystringparameters']['type']
